@@ -1,6 +1,7 @@
 # surajjadhav.me
 > The source code for my personal website
 
+[![Build Status](https://travis-ci.org/surajjdhv/surajjdhv.github.io.svg?branch=dev)](https://travis-ci.org/surajjdhv/surajjdhv.github.io)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![eleventy](https://img.shields.io/badge/staticgen-eleventy-%23707070.svg)](https://11ty.io)
