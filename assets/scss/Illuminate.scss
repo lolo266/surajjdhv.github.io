@@ -1,0 +1,18 @@
+/*!
+ * Copyright (c) 2019 Suraj Jadhav
+ * MIT License
+ * https://github.com/surajjdhv/surajjdhv.github.io
+ */
+
+$flexbox-breakpoint: 775px;
+$container-width: 1100px;
+$sidebar-width: 400px;
+
+@import "parts/fonts";
+@import "parts/colors";
+@import "parts/base";
+@import "parts/utils/*";
+@import "parts/layout/*";
+@import "parts/modifiers";
+@import "parts/safe";
+@import "parts/prism";

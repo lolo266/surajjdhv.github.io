@@ -1,0 +1,27 @@
+{
+  "title": "Suraj Jadhav",
+  "description": "Programmer / Web Developer",
+  "url": "https://surajjadhav.me",
+  "repository": "https://github.com/surajjdhv/surajjdhv.github.io",
+  "author": {
+    "name": "Suraj Jadhav",
+    "email": "mail@surajjadhav.me",
+    "photo": "http://placehold.it/180x180",
+    "twitter": "surajsjdhv",
+    "github": "surajjdhv",
+    "linkedin": "https://www.linkedin.com/in/suraj-jadhav/",
+    "telegram": "https://t.me/surajjdhv"
+  },
+  "site": {
+    "output": "./_site"
+  },
+  "feed": {
+    "title": "RSS Feed for Suraj Jadhav's articles",
+    "subtitle": "Suraj Jadhav's personal pages",
+    "path": "/articles/feed.xml"
+  },
+  "disqus": {
+    "enable": "true",
+    "username": "surajjadhav-me"
+  }
+}

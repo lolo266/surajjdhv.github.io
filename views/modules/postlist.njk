@@ -1,0 +1,41 @@
+{% if not posts %}
+  {% set posts = collections.posts %}
+{% endif %}
+{% for post in posts | reverse %}
+  {% if (loop.index != 1) and (postYear != post.date | parseDate("yyyy") - 1) %}
+    <h1 class="txt--300" style="font-feature-settings: onum 1">{{ postYear or post.date | parseDate("yyyy") }}</h1>
+  {% endif %}
+  {% set postYear = post.date | parseDate("yyyy") - 1 %}
+  <div class="row row--immutable padding--y-2">
+    <div class="col--fit">
+      <div class="post__date">
+        <div class="post__date_month">
+          {{ post.date | parseDate("LLL") }}
+        </div>
+        <div class="post__date_day" style="background-color: {% generateColorFrom post.data.title %}">
+          {{ post.date | parseDate("dd") }}
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <a href="{{ post.url | url }}">
+        <div class="post__title margin--y-0 txt--dark-fade txt--700">{{ post.data.title }}</div>
+        <div class="post__props"></div>
+        <div class="post__desc margin--y-0 txt--dark-fade ">
+          {% if post.data.desc %}
+            {{ post.data.desc }}.
+          {% endif %}
+          <span class="post__props">
+            {% for tag in post.data.tags %}
+              {%- if tag != "post" -%}
+                <span class="txt--dark-fade">
+                  <i>#{{ tag }}</i>
+                </span>
+              {%- endif -%}
+            {% endfor %}
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+{% endfor %}

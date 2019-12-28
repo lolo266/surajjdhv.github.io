@@ -1,0 +1,66 @@
+{
+  "name": "surajjadhav.me",
+  "version": "2.0",
+  "description": "My personal pages - powered by eleventy",
+  "homepage": "https://surajjadhav.me",
+  "dependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "@babel/core": "^7.6.2",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "cheerio": "^1.0.0-rc.3",
+    "core-js": "3.2.1",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.1.0",
+    "eleventy-plugin-pwa": "^1.0.8",
+    "feather-icons": "^4.24.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-minifier": "^4.0.0",
+    "is-url-external": "^1.0.3",
+    "luxon": "^1.19.3",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.4",
+    "network-avatar-picker": "^1.4.0",
+    "node-sass": "^4.12.0",
+    "postcss-inline-svg": "^4.1.0",
+    "postcss-normalize": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "reading-time": "^1.2.0",
+    "regenerator-runtime": "^0.13.3",
+    "rimraf": "^3.0.0",
+    "scroll-behavior-polyfill": "^2.0.12",
+    "terser-webpack-plugin": "^2.1.0",
+    "twitter": "^1.7.1",
+    "webpack": "^4.41.0"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp",
+    "images": "gulp images",
+    "serve": "gulp serve"
+  },
+  "browserslist": [
+    ">= 1%",
+    "last 2 version",
+    "android >= 5.0",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajjdhv/surajjdhv.github.io"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty"
+  ],
+  "author": "Suraj Jadhav",
+  "license": "MIT"
+}

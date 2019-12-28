@@ -1,0 +1,24 @@
+{% if twitter %}
+{% for tweets in twitter | head(3) %}
+  <div class="row row--immutable padding--y-1">
+    <div class="col--fit">
+      <a href="https://twitter.com/{{ tweets.username }}/status/{{ tweets.id }}" aria-label="last-tweet no.{{ loop.index }}">
+        <div class="post__icon" style="background-color: #38A1F3">
+          <i class="fea-twitter" style="filter: invert(1);opacity:1"></i>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="https://twitter.com/{{ tweets.username }}">
+        <b>{{ tweets.name }}</b>
+        <span class="txt--dark-fade">@{{ tweets.username }}</span>
+        ·
+        <span class="txt--dark-fade twitter-date" data-date="{{ tweets.date }}">{{ tweets.date }}</span>
+      </a>
+      <p class="margin--y-0">
+        {{ tweets.text | urlize | twitterize | nl2br | safe }}
+      </p>
+    </div>
+  </div>
+{% endfor %}
+{% endif %}

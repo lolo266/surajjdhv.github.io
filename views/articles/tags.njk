@@ -1,0 +1,14 @@
+---
+permalink: /articles/tags/
+layout: plain.njk
+title: Tags
+---
+
+{% set articles = collections[tag] %}
+<section class="container content__shrink">
+  <h1 class="txt--300">Tagged Articles</h1>
+  {% for _tag in collections.tags %}
+    <a href="/articles/tags/{{ _tag }}/" class="btn {% if tag == _tag %}bg--accent{% endif %} btn--sm txt--upper">{{ _tag }}</a>
+  {% endfor %}
+  <div class="spacer--3"></div>
+</section>

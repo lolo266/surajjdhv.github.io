@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="prefetch" href="/assets/img/me.png" as="image" type="image/png" crossorigin="anonymous">
+  <link rel="alternate" type="application/rss+xml" title="{{ metadata.feed.title }}" href="{{ metadata.feed.path | url }}">
+  <link rel="manifest" href="/webmanifest.json">
+  {% include 'metasocial.njk' %}
+  {% include 'favicon.njk' %}
+  <style>
+    {% include 'virtual/Illuminate.css' %}
+    {% include 'virtual/IlluminateIcons.css' %}
+  </style>
+  <script>
+
+    {% include "virtual/Critical.js" %}
+  </script>
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="/assets/css/illuminateicons.css">
+  </noscript>
+  <script type="module" src="/assets/js/surajjdhv.mjs" async></script>
+  <script nomodule type="text/javascript" src="/assets/js/surajjdhv.js" async defer></script>
+</head>

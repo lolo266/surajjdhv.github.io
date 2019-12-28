@@ -1,0 +1,88 @@
+<nav class="mobile-menu__wrapper">
+  <div class="mobile-menu">
+    <a class="link" aria-label="home" href="/">Home</a>
+    <a class="link" aria-label="article" href="/articles/">Blog</a>
+    <a class="link" aria-label="about-me" href="/about">About</a>
+  </div>
+  <div class="sidebar__social">
+    <a aria-label="twitter" href="https://twitter.com/{{ metadata.author.twitter }}">
+      <i class="fea-twitter"></i>
+    </a>
+    <a aria-label="github" href="https://github.com/{{ metadata.author.github }}">
+      <i class="fea-github"></i>
+    </a>
+    <a aria-label="linkedin" href="{{ metadata.author.linkedin }}">
+      <i class="fea-linkedin"></i>
+    </a>
+    <a aria-label="telegram" href="{{ metadata.author.telegram }}">
+      <i class="fea-telegram"></i>
+    </a>
+    <a aria-label="rss" href="{{ metadata.feed.path }}">
+      <i class="fea-rss"></i>
+    </a>
+  </div>
+</nav>
+<header class="sidebar">
+  <div class="sidebar__wrapper container">
+    <div class="row">
+      <div class="col padding--x-1">
+        <button id="themeswitch" aria-label="theme switcher">
+          <i class="fea-moon"></i>
+          <i class="fea-sun"></i>
+        </button>
+        <div class="me">
+          <a aria-label="home" href="/">
+            <img height="140" width="140" alt="prettiest human in the world" src="/assets/img/me.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col padding--x-1 sidebar__identity">
+        <div class="sidebar__title">
+          <a aria-label="home" href="/">Suraj Jadhav</a>
+          <a aria-label="home" href="/">Suraj Jadhav</a>
+        </div>
+        <div class="sidebar__desc">{{ metadata.description }}</div>
+      </div>
+    </div>
+    <div class="row sidebar__menu__wrapper">
+      <div class="col padding--x-1 padding--y-1 sidebar__menu">
+        <div>
+          <a aria-label="home" href="/">Home</a>
+        </div>
+        <div>
+          <a aria-label="article" href="/articles/">Blog</a>
+        </div>
+        <div>
+          <a aria-label="about-me" class="jumper" href="/about">About</a>
+        </div>
+        <div class="padding--y-2"></div>
+        <div class="sidebar__social padding--y-0">
+          <a aria-label="twitter" href="https://twitter.com/{{ metadata.author.twitter }}">
+            <i class="fea-twitter"></i>
+          </a>
+          <a aria-label="github" href="https://github.com/{{ metadata.author.github }}">
+            <i class="fea-github"></i>
+          </a>
+          <a aria-label="linkedin" href="{{ metadata.author.linkedin }}">
+            <i class="fea-linkedin"></i>
+          </a>
+          <a aria-label="telegram" href="{{ metadata.author.telegram }}">
+            <i class="fea-telegram"></i>
+          </a>
+          <a aria-label="rss" href="{{ metadata.feed.path }}">
+            <i class="fea-rss"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sidebar__mobile-menu__wrapper">
+      <div class="col padding--x-1 sidebar__mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>

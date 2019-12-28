@@ -1,0 +1,32 @@
+{
+  "env": {
+    "legacy": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "useBuiltIns": "entry",
+            "corejs": 3,
+            "targets": {
+              "esmodules": false
+            }
+          }
+        ]
+      ]
+    },
+    "modern": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "useBuiltIns": "entry",
+            "corejs": 3,
+            "targets": {
+              "esmodules": true
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

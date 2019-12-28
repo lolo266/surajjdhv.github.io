@@ -1,0 +1,10 @@
+---
+layout: plain.njk
+permalink: /articles/
+title: Blog
+---
+<section class="container content__shrink">
+  <h1 class="txt--300">All Articles</h1>
+  {% set posts = collections.posts %}
+  {% include "postlist.njk" %}
+</section>
