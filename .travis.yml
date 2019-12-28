@@ -3,10 +3,10 @@ node_js:
   - "node"
 install:
   # install eleventy and any dependencies inside ./package.json
-  - npm install
+  - yarn
 script:
   # run generator
-  - npx @11ty/eleventy
+  - yarn build
   # create .nojekyll files
   # We are telling GitHub to not process this branch using jekyll
   - touch .nojekyll
