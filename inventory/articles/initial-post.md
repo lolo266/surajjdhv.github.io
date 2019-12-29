@@ -6,6 +6,5 @@ tags:
   - random
 ---
 
-This is my first post.
+This is my first post. More content coming soon.
 
-Jesus.
