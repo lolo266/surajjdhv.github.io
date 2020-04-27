@@ -10,11 +10,7 @@ const JSConfig = {
   output: {
     pathinfo: false
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      disqusdata: JSON.stringify(metadata.disqus)
-    })
-  ],
+  plugins: [],
   optimization: {
     minimizer: [
       new TerserPlugin({

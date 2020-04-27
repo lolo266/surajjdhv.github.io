@@ -19,9 +19,5 @@
     "title": "RSS Feed for Suraj Jadhav's articles",
     "subtitle": "Suraj Jadhav's personal pages",
     "path": "/articles/feed.xml"
-  },
-  "disqus": {
-    "enable": "true",
-    "username": "surajjadhav-me"
   }
 }

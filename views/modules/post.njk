@@ -2,16 +2,18 @@
 layout: plain.njk
 ---
 {% if splash %}
-<div class="splash__container">
-  <img src="{{ splash.url }}" style="max-width:100%">
-  {% if splash.credit %}
-    <div class="splash__desc right txt--xsmall padding--x-2">{{ splash.credit | urlize | safe }}</div>
-  {% endif %}
-</div>
+  <div class="splash__container">
+    <img src="{{ splash.url }}" style="max-width:100%">
+    {% if splash.credit %}
+      <div class="splash__desc right txt--xsmall padding--x-2">{{ splash.credit | urlize | safe }}</div>
+    {% endif %}
+  </div>
 {% endif %}
 <header class="container content__shrink center article">
   <h1 class="txt--700">{{ title }}</h1>
-  <h3 class="txt--300"><i>{{ desc }}</i></h3>
+  <h3 class="txt--300">
+    <i>{{ desc }}</i>
+  </h3>
   <time class="txt--small" datetime="{{ date | parseDate("yyyy-LL-dd") }}">
     <i class="fea-calendar"></i>&nbsp;&nbsp;{{ date | parseDate }}
   </time>
@@ -43,11 +45,13 @@ layout: plain.njk
     </div>
   </div>
   <div class="spacer--2"></div>
-  {% if metadata.disqus.username and metadata.disqus.enable == "true" %}
-    <div id="disqus_thread" class="center">
-      <button id="disqus_loader" class="btn btn--outline bg--transparent txt--accent">View Comments</button>
-    </div>
-  {% endif %}
+  <script src="https://utteranc.es/client.js"
+    repo="surajjdhv/surajjdhv.github.io"
+    issue-term="pathname"
+    label="comment"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async></script>
 </section>
 <div class="hline"></div>
 <section class="container content__shrink">

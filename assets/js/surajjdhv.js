@@ -1,8 +1,7 @@
 import "core-js/es";
 import "regenerator-runtime/runtime";
 
-import disqusLoader from "./modules/DisqusLoader";
-import importScr from "./modules/ImportSrc";
+import importSrc from "./modules/ImportSrc";
 
 const html = document.documentElement || document.body;
 
@@ -80,9 +79,8 @@ function onPageLoad() {
     .querySelectorAll(".mobile-menu__wrapper, .sidebar, .content")
     .forEach((el) => el.classList.add("nightfx"));
 
-  disqusLoader(disqusdata.username);
   if (!"scroll-behaviour" in document.documentElement.style)
-    importScr("/assets/js/polyfills/ScrollBehaviour.js");
+    importSrc("/assets/js/polyfills/ScrollBehaviour.js");
 }
 
 window.addEventListener("load", onPageLoad);
