@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+      <url>
+        <loc>https://surajjadhav.me/articles/hello-world!/</loc>
+        <lastmod>2019-12-18</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/about/</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/404.html</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/articles/feed.xml</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/articles/</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/articles/tags/all/</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/articles/tags/</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+      
+      <url>
+        <loc>https://surajjadhav.me/</loc>
+        <lastmod>2020-06-01</lastmod>
+      </url>
+</urlset>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Suraj Jadhav</title>
+  <subtitle>Suraj Jadhav&#39;s personal pages</subtitle>
+  <updated>2019-12-18T00:00:00-00:00</updated>
+  <link href="https://surajjadhav.me/articles/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://surajjadhav.me" rel="alternate" type="text/html"/>
+  <id>https://surajjadhav.me/</id>
+  <author>
+    <name>Suraj Jadhav</name>
+    <email>mail@surajjadhav.me</email>
+  </author>
+    <entry>
+      <title>Hello World!</title>
+      <link href="https://surajjadhav.me/articles/hello-world!/"/>
+      <updated>2019-12-18T00:00:00-00:00</updated>
+      <id>https://surajjadhav.me/articles/hello-world!/</id>
+      <content type="html">&lt;p&gt;This is my first post. More content coming soon.&lt;/p&gt;
+</content>
+    </entry></feed>
